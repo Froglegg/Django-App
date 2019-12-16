@@ -14,6 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", __file__)
 
 
 # Quick-start development settings - unsuitable for production
@@ -79,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'gettingstarted',
         'USER': 'in5607',
-        'PASSWORD': 'Duckbutter1',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5432',
     }
